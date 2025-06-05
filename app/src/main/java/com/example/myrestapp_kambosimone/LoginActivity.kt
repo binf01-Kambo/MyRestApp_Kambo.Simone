@@ -1,5 +1,6 @@
 package com.example.myrestapp_kambosimone
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -21,7 +22,8 @@ class LoginActivity : AppCompatActivity() {
             val password = sha256(findViewById<EditText>(R.id.password).text.toString())
 
             if(nomeUtente == "simone" && password == "10eb4c9dfdf432467d545ae13563a3a2a6010d0f0b21f2e06224d3ee415fd458"){ //kambo cifrato
-
+                val mioIntent = Intent(this, MenuActivity::class.java)
+                startActivity(mioIntent)
             }
             else{
                 val mioToast = Toast.makeText(this, "Password o bnome utente sbagliati", Toast.LENGTH_LONG)
