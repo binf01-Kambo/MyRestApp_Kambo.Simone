@@ -45,5 +45,7 @@ dependencies {
     implementation(libs.volley)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
+    implementation(libs.glide)
+    implementation(libs.gson)
     androidTestImplementation(libs.androidx.espresso.core)
 }
